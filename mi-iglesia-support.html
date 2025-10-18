@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Mi Iglesia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 16px;
+        }
+
+        .content {
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .section-content {
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: #4a5568;
+            padding-left: 15px;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .contact-box h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+
+        .email-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .email-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .email-link {
+            display: block;
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #718096;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .contact-box {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">⛪</div>
+            <h1>Soporte - Mi Iglesia</h1>
+            <p class="subtitle">Estamos aquí para ayudarte</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo creo un evento recurrente?</div>
+                    <div class="faq-answer">Al crear un evento, selecciona la opción "Evento recurrente" y elige la frecuencia (semanal, mensual, etc.). El sistema generará automáticamente los eventos futuros.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo agrego miembros a mi iglesia?</div>
+                    <div class="faq-answer">Ve a la pestaña "Miembros" y toca el botón "+". Puedes agregar miembros manualmente o invitarlos mediante un enlace de invitación.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Puedo exportar las asistencias?</div>
+                    <div class="faq-answer">Sí, en la sección de Reportes puedes exportar toda la información en formato CSV para usarla en Excel o Google Sheets.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Los datos están seguros?</div>
+                    <div class="faq-answer">Absolutamente. Utilizamos encriptación de nivel empresarial y todos los datos están almacenados de forma segura en servidores protegidos.</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Características Principales</h2>
+                <div class="section-content">
+                    <ul style="list-style-position: inside; color: #4a5568;">
+                        <li>Gestión completa de eventos y cultos</li>
+                        <li>Administración de miembros y ministerios</li>
+                        <li>Control de asistencias en tiempo real</li>
+                        <li>Reportes y estadísticas detalladas</li>
+                        <li>Sincronización en la nube</li>
+                        <li>Acceso desde múltiples dispositivos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h2>¿Necesitas ayuda adicional?</h2>
+            <p>Si tienes alguna pregunta, sugerencia o necesitas asistencia técnica, no dudes en contactarnos. Respondemos en menos de 24 horas.</p>
+            <a href="mailto:mikael.burgos@proton.me?subject=Soporte Mi Iglesia&body=Hola, necesito ayuda con:" class="email-button">
+                📧 Enviar Email
+            </a>
+            <a href="mailto:mikael.burgos@proton.me" class="email-link">mikael.burgos@proton.me</a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Mi Iglesia - Gestión de Miembros. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
